@@ -1,0 +1,112 @@
+[
+  {
+    "Target": "package-lock.json",
+    "Type": "npm",
+    "Vulnerabilities": [
+      {
+        "VulnerabilityID": "CVE-2019-10768",
+        "PkgName": "angular",
+        "InstalledVersion": "1.7.5",
+        "FixedVersion": "1.7.9",
+        "Layer": {
+          "DiffID": "sha256:e57efd93192b11de3ea879bb2fbcc6f46395b6816fda6b28e8adab9024055e41"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-10768",
+        "Title": "AngularJS: Prototype pollution in merge function could result in code injection",
+        "Description": "In AngularJS before 1.7.9 the function `merge()` could be tricked into adding or modifying properties of `Object.prototype` using a `__proto__` payload.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10768",
+          "https://github.com/advisories/GHSA-89mq-4x47-5v83",
+          "https://github.com/angular/angular.js/commit/add78e62004e80bb1e16ab2dfe224afa8e513bc3",
+          "https://lists.apache.org/thread.html/rca37935d661f4689cb4119f1b3b224413b22be161b678e6e6ce0c69b@%3Ccommits.nifi.apache.org%3E",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-10768",
+          "https://snyk.io/vuln/SNYK-JS-ANGULAR-534884"
+        ],
+        "PublishedDate": "2019-11-19T21:15:00Z",
+        "LastModifiedDate": "2020-01-24T05:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-7676",
+        "PkgName": "angular",
+        "InstalledVersion": "1.7.5",
+        "FixedVersion": "1.8.0",
+        "Layer": {
+          "DiffID": "sha256:e57efd93192b11de3ea879bb2fbcc6f46395b6816fda6b28e8adab9024055e41"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7676",
+        "Title": "nodejs-angular: XSS due to regex-based HTML replacement",
+        "Description": "angular.js prior to 1.8.0 allows cross site scripting. The regex-based input HTML replacement may turn sanitized code into unsanitized one. Wrapping \"\u003coption\u003e\" elements in \"\u003cselect\u003e\" ones changes parsing behavior, leading to possibly unsanitizing code.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-79"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+            "V2Score": 3.5,
+            "V3Score": 5.4
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+            "V3Score": 5.4
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7676",
+          "https://github.com/advisories/GHSA-mhp6-pxh8-r675",
+          "https://github.com/angular/angular.js/pull/17028,",
+          "https://lists.apache.org/thread.html/r198985c02829ba8285ed4f9b1de54a33b5f31b08bb38ac51fc86961b@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/r3f05cfd587c774ea83c18e59eda9fa37fa9bbf3421484d4ee1017a20@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/r446c297cd6cda2bd7e345c9b0741d7f611df89902e5d515848c6f4b1@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/r455ebd83a1c69ae8fd897560534a079c70a483dbe1e75504f1ca499b@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/r57383582dcad2305430321589dfaca6793f5174c55da6ce8d06fbf9b@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/r79e3feaaf87b81e80da0e17a579015f6dcb94c95551ced398d50c8d7@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/r80f210a5f4833d59c5d3de17dd7312f9daba0765ec7d4052469f13f1@%3Cozone-commits.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/rb6423268b25db0f800359986867648e11dbd38e133b9383e85067f02@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://lists.apache.org/thread.html/rda99599896c3667f2cc9e9d34c7b6ef5d2bbed1f4801e1d75a2b0679@%3Ccommits.nifi.apache.org%3E",
+          "https://lists.apache.org/thread.html/rfa2b19d01d10a8637dc319a7d5994c3dbdb88c0a8f9a21533403577a@%3Cozone-issues.hadoop.apache.org%3E",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-7676",
+          "https://snyk.io/vuln/SNYK-JS-ANGULAR-570058"
+        ],
+        "PublishedDate": "2020-06-08T14:15:00Z",
+        "LastModifiedDate": "2020-10-09T16:15:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-5cp4-xmrw-59wf",
+        "PkgName": "angular",
+        "InstalledVersion": "1.7.5",
+        "FixedVersion": "1.8.0",
+        "Layer": {
+          "DiffID": "sha256:e57efd93192b11de3ea879bb2fbcc6f46395b6816fda6b28e8adab9024055e41"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-5cp4-xmrw-59wf",
+        "Title": "XSS via JQLite DOM manipulation functions in AngularJS",
+        "Description": "### Summary\nXSS may be triggered in AngularJS applications that sanitize user-controlled HTML snippets before passing them to `JQLite` methods like `JQLite.prepend`, `JQLite.after`, `JQLite.append`, `JQLite.replaceWith`, `JQLite.append`, `new JQLite` and `angular.element`.\n\n### Description\n\nJQLite (DOM manipulation library that's part of AngularJS) manipulates input HTML before inserting it to the DOM in `jqLiteBuildFragment`.\n\nOne of the modifications performed [expands an XHTML self-closing tag](https://github.com/angular/angular.js/blob/418355f1cf9a9a9827ae81d257966e6acfb5623a/src/jqLite.js#L218).\n\nIf `jqLiteBuildFragment` is called (e.g. via `new JQLite(aString)`) with user-controlled HTML string that was sanitized (e.g. with [DOMPurify](https://github.com/cure53/DOMPurify)), the transformation done by JQLite may modify some forms of an inert, sanitized payload into a payload containing JavaScript - and trigger an XSS when the payload is inserted into DOM.\n\nThis is similar to a bug in jQuery `htmlPrefilter` function that was [fixed in 3.5.0](https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/).\n\n### Proof of concept\n\n```javascript\nconst inertPayload = `\u003cdiv\u003e\u003cstyle\u003e\u003cstyle/\u003e\u003cimg src=x onerror=\"alert(1337)\"/\u003e` \n```\nNote that the style element is not closed and `\u003cimg` would be a text node inside the style if inserted into the DOM as-is.\nAs such, some HTML sanitizers would leave the `\u003cimg` as is without processing it and stripping the `onerror` attribute.\n\n```javascript\nangular.element(document).append(inertPayload);\n```\nThis will alert, as `\u003cstyle/\u003e` will be replaced with `\u003cstyle\u003e\u003c/style\u003e` before adding it to the DOM, closing the style element early and reactivating `img`.\n\n### Patches\nThe issue is patched in `JQLite` bundled with angular 1.8.0. AngularJS users using JQuery should upgrade JQuery to 3.5.0, as a similar vulnerability [affects jQuery \u003c3.5.0](https://github.com/jquery/jquery/security/advisories/GHSA-gxr4-xjj5-5px2).\n\n### Workarounds\nChanging sanitizer configuration not to allow certain tag grouping (e.g. `\u003coption\u003e\u003cstyle\u003e\u003c/option\u003e`) or inline style elements may stop certain exploitation vectors, but it's uncertain if all possible exploitation vectors would be covered. Upgrade of AngularJS to 1.8.0 is recommended.",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-5cp4-xmrw-59wf",
+          "https://github.com/google/security-research/security/advisories/GHSA-5cp4-xmrw-59wf"
+        ]
+      }
+    ]
+  }
+]
